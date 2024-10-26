@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/altura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculadora_imc"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="67dp"
+        android:layout_height="42dp"
+        app:srcCompat="@mipmap/icon_imc"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="7dp"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/icon_logout"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="350dp"
+        tools:layout_editor_absoluteY="7dp"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ingrese_los_datos"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="214dp"
+        tools:layout_editor_absoluteY="108dp">
+
+        <TextView
+            android:id="@+id/labelPeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/peso"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="28dp" />
+
+        <EditText
+            android:id="@+id/editTextPeso"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edittex_border"
+            android:ems="10"
+            android:hint="@string/_84"
+            android:inputType="number"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="252dp"
+            android:autofillHints="int" />
+
+        <TextView
+            android:id="@+id/wardingpeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/en_kilogramos"
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints,SmallSp"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="28dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="12dp"
+        tools:ignore="MissingConstraints,RtlSymmetry"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="108dp">
+
+        <TextView
+            android:id="@+id/labelAlrura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/altura"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="28dp" />
+
+        <EditText
+            android:id="@+id/editTextAltura"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edittex_border"
+            android:ems="10"
+            android:hint="@string/_184"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="252dp"
+            android:autofillHints="int" />
+
+        <TextView
+            android:id="@+id/wardingAltura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/en_centimetros"
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints,SmallSp"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="28dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="307dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/calcular"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="208dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resultado"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="262dp" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:text="@string/su_imc_es_17_4_lo_que_indica_que_su_peso_esta_en_la_categor_a_de_bajo_peso_para_adultos_de_su_estatura"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints,RtlSymmetry"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="301dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="351dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:text="@string/guardar"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="251dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buttonHistory"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:text="@string/ver_historial"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="251dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tabla_de_referencias"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="420dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="444dp"
+        tools:ignore="MissingConstraints">
+
+        <!-- Fila 1 -->
+        <TableRow
+            android:background="@color/blue">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="@string/rango_de_imc"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="@string/clasificaci_n"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+        </TableRow>
+
+        <!-- Fila 2 -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="@string/_16_5_kg_m2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="@string/bajo_peso_severo" />
+        </TableRow>
+
+        <!-- Fila 3 -->
+        <TableRow
+            android:background="@color/blue_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="@string/_16_5_18_5_kg_m2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="@string/bajo_peso" />
+        </TableRow>
+
+        <!-- Fila 4 -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="@string/_18_5_25_kg_m2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="@string/peso_normal" />
+        </TableRow>
+
+        <!-- Fila 5 -->
+        <TableRow
+            android:background="@color/blue_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="@string/_25_30_kg_m2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="@string/sobre_peso" />
+        </TableRow>
+
+        <!-- Fila 6 -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="@string/_30_35_kg_m2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="@string/obesidad_tipo_1" />
+        </TableRow>
+
+        <!-- Fila 7 -->
+        <TableRow
+            android:background="@color/blue_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="@string/_35_40_kg_m2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="@string/obesidad_tipo_2" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
