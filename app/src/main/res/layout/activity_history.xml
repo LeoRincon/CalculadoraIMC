@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/altura"
+        android:id="@+id/tittleHistory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="95dp"
@@ -14,13 +14,13 @@
         android:text="@string/calculadora_imc"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/logout_icon"
+        app:layout_constraintStart_toStartOf="@+id/icon_logo"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="7dp" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/icon_logo"
         android:layout_width="67dp"
         android:layout_height="42dp"
         android:contentDescription="@string/todo"
@@ -30,7 +30,7 @@
         tools:layout_editor_absoluteY="7dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/logout_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/todo"
@@ -40,12 +40,12 @@
         tools:layout_editor_absoluteY="7dp" />
 
     <TableLayout
-        android:id="@+id/tableLayout"
+        android:id="@+id/tableLayoutHistory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
         android:padding="16dp"
-        app:layout_constraintTop_toTopOf="@+id/altura"
+        app:layout_constraintTop_toTopOf="@+id/tittleHistory"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-16dp">
 
@@ -407,7 +407,7 @@
     </TableLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonHitory"
         android:layout_width="307dp"
         android:layout_height="50dp"
         android:layout_marginTop="241dp"
@@ -415,7 +415,7 @@
         android:text="@string/volver"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="@+id/tableLayout"
+        app:layout_constraintTop_toTopOf="@+id/tableLayoutHistory"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="54dp" />
 
