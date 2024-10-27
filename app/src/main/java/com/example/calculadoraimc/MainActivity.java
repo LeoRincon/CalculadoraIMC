@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
     @SuppressLint("NotConstructor")
     public void Login(View view){
         Intent login=new Intent(this, RegisterUser.class);
@@ -29,10 +28,5 @@ public class MainActivity extends AppCompatActivity {
     public void Calculator(View view){
         Intent calculator=new Intent(this, Calculator.class);
         startActivity(calculator);
-    }
-    @SuppressLint("NotConstructor")
-    public void History(View view){
-        Intent history=new Intent(this, History.class);
-        startActivity(history);
     }
 }
