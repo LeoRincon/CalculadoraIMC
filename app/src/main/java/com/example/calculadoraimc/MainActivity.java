@@ -21,14 +21,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(login);
     }
     @SuppressLint("NotConstructor")
-    public void Calculator(View view){
-        Intent calculator=new Intent(this, Calculator.class);
-        startActivity(calculator);
-    }
-    @SuppressLint("NotConstructor")
     public void Register(View view){
         Intent register=new Intent(this, RegisterUser.class);
         startActivity(register);
+    }
+    @SuppressLint("NotConstructor")
+    public void Calculator(View view){
+        Intent calculator=new Intent(this, Calculator.class);
+        startActivity(calculator);
     }
     @SuppressLint("NotConstructor")
     public void History(View view){

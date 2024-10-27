@@ -231,7 +231,7 @@
             android:layout_height="50dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_button"
-            android:onClick="Register"
+            android:onClick="History"
             android:text="@string/ver_historial"
             android:textSize="18sp"
             android:textStyle="bold"
