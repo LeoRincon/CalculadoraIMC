@@ -114,6 +114,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="100dp"
         android:layout_marginEnd="100dp"
+        android:onClick="Calculator"
         android:text="@string/ingresar"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
