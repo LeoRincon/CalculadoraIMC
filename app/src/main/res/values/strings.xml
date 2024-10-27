@@ -45,4 +45,5 @@
     <string name="bajo">Bajo</string>
     <string name="volver">Volver</string>
     <string name="logo_imc">logo_imc</string>
+    <string name="no_tienes_cuenta_registrate">No tienes cuenta? Registrate</string>
 </resources>
